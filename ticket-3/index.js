@@ -1,8 +1,11 @@
 function countNumberOfNinesInNumber(number) {
   let count = 0;
+  // converting param to a string
 
-  for (let i = 0; i < number.length; i++) {
-    const digit = number[i];
+  let numberString = number.toString()
+ 
+  for (let i = 0; i < numberString.length; i++) {
+    const digit = numberString[i];
     if ("9" === digit) {
       count++;
     }
@@ -10,3 +13,8 @@ function countNumberOfNinesInNumber(number) {
 
   return count;
 }
+
+
+
+
+console.log(countNumberOfNinesInNumber(989))

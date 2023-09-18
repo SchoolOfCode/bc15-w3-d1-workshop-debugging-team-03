@@ -1,7 +1,7 @@
 function countNumberOfNinesInNumber(number) {
   let count = 0;
+  
   // converting param to a string
-
   let numberString = number.toString()
  
   for (let i = 0; i < numberString.length; i++) {
